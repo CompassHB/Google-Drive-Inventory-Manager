@@ -414,8 +414,7 @@ def main():
                 title="Update Activity Over Time",
                 markers=True
             )
-            fig_timeline.update_xaxis(title="Month")
-            fig_timeline.update_yaxis(title="Number of Updates")
+            fig_timeline.update_layout(xaxis_title="Month", yaxis_title="Number of Updates")
             st.plotly_chart(fig_timeline, use_container_width=True)
     
     with tab2:
